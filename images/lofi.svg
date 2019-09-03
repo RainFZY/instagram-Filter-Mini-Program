@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>       
+		<filter id="lofi">
+    			<!-- contrast -->
+    			<feComponentTransfer>
+    			<feFuncA type="discrete" tableValues="0 1.5"/>
+    			</feComponentTransfer>
+    			<!-- saturate -->
+    			<feColorMatrix in="SourceGraphic" type="saturate" values="1.1"/>
+    			<!-- blend mode -->
+    			<feFlood flood-color="#gradient_lofi" flood-opacity=".3" />
+    			<feBlend mode="multiply" in="SourceGraphic" />
+    		</filter>
+	</defs>
+</svg>

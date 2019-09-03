@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+         	
+    	 <filter id="reyes">
+    <!-- contrast -->
+    <feComponentTransfer>
+    <feFuncA type="discrete" tableValues="0 .85"/>
+    </feComponentTransfer>
+    <!-- brightness -->
+    <feComponentTransfer>
+    <feFuncA type="linear" slope="1.1"/>
+    </feComponentTransfer>
+    <!-- saturate -->
+    <feColorMatrix in="SourceGraphic" type="saturate" values=".75"/>
+    <!-- sepia with opacity 22% -->
+    <feColorMatrix 
+    type="matrix" 
+    values="
+    .343 .669 .119 0 0 
+    .249 .626 .130 0 0
+    .172 .334 .111 0 0
+    .000 .000 .000 .22 0 "
+    />
+    <!-- blend mode -->
+    <feFlood flood-color="#efcdad" flood-opacity=".5" />
+    <feBlend mode="soft-light" in2="SourceGraphic" />
+    </filter>
+    </defs>
+</svg>

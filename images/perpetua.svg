@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+         	
+    	 <linearGradient id="gradient_perpetua">
+    <stop offset="100%" stop-color="#005b9a" stop-opacity="10%" />
+    <stop offset="100%" stop-color="#e6c13d" stop-opacity="100%" />
+    </linearGradient>
+    <filter id="perpetua">
+    <!-- blend mode -->
+    <feFlood flood-color="#gradient_perpetua" flood-opacity=".5" />
+    <feBlend mode="soft-light" in="SourceGraphic" />
+    </filter>
+    </defs>
+</svg>

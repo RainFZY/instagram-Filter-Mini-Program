@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+         	
+    	  <filter id="1977">
+    <!-- contrast -->
+    <feComponentTransfer>
+    <feFuncA type="discrete" tableValues="0 1.1"/>
+    </feComponentTransfer>
+    <!-- brightness -->
+    <feComponentTransfer>
+    <feFuncR type="linear" slope="1.1"/>
+    <feFuncG type="linear" slope="1.1"/>
+    <feFuncB type="linear" slope="1.1"/>
+    </feComponentTransfer>
+    <!-- saturate -->
+    <feColorMatrix in="SourceGraphic" type="saturate" values="1.3"/>
+    <feFlood flood-color="rgb(248,106,188)" flood-opacity=".3" />
+    <feBlend mode="screen" in="SourceGraphic" />
+    </filter>
+    <!-- screen on filtered image -->
+    <rect id="1977sc" x="0" y="0" width="100%" height="100%" fill-opacity=".3" mix-blend-mode="screen" fill="rgb(248,106,188)"/> 
+    </defs>
+</svg>

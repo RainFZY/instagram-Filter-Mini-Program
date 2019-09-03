@@ -1,0 +1,7 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">  
+    <defs>        
+     	<filter id="svgHueRotate">
+    		<feColorMatrix in="SourceGraphic" type="hueRotate" values="90" />
+	</filter>
+    </defs>
+</svg>

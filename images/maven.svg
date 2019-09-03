@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+         	
+    	<filter id="maven">
+    <!-- contrast -->
+    <feComponentTransfer>
+    <feFuncA type="discrete" tableValues="0 .95"/>
+    </feComponentTransfer>
+    <!-- brightness -->
+    <feComponentTransfer>
+    <feFuncA type="linear" slope=".95"/>
+    </feComponentTransfer>
+    <!-- saturate -->
+    <feColorMatrix in="SourceGraphic" type="saturate" values="1.5"/>
+    <!-- sepia with opacity 25% -->
+    <feColorMatrix 
+    type="matrix" 
+    values="
+    .343 .669 .119 0 0 
+    .249 .626 .130 0 0
+    .172 .334 .111 0 0
+    .000 .000 .000 .25 0 "
+    />
+    <!-- blend mode -->
+    <feFlood flood-color="rgb(3,230,26)" flood-opacity=".2" />
+    <feBlend mode="hue" in2="SourceGraphic" />
+    </filter>
+    </defs>
+</svg>

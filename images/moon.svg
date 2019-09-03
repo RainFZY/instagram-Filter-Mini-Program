@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+         	
+    	<filter id="moon">
+    <!-- contrast -->
+    <feComponentTransfer>
+    <feFuncA type="discrete" tableValues="0 1.1"/>
+    </feComponentTransfer>
+    <!-- brightness -->
+    <feComponentTransfer>
+    <feFuncA type="linear" slope="1.1"/>
+    </feComponentTransfer>
+    <!-- grayscale 100% -->
+    <feColorMatrix in="SourceGraphic" type="saturate" values="0"/>
+    <!-- blend mode -->
+    <feFlood flood-color="#a0a0a0" />
+    <feBlend mode="soft-light" in="SourceGraphic" />
+    <feFlood flood-color="#383838" />
+    <feBlend mode="lighten" in="SourceGraphic" />
+    </filter>
+    </defs>
+</svg>

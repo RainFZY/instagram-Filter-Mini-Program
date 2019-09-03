@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+         	
+    	<radialGradient id="gradient_earlybird">
+    		<stop offset="20%" stop-color="rgb(208, 186, 142)" stop-opacity="100%" />
+    		<stop offset="100%" stop-color="rgb(29, 2, 16)" stop-opacity="20%" />
+    	</radialGradient>
+    		<filter id="earlybird">
+    			<!-- sepia with opacity 20%-->
+    			<feColorMatrix 
+   			 type="matrix" 
+    			values="
+    			.343 .669 .119 0 0 
+    			.249 .626 .130 0 0
+    			.172 .334 .111 0 0
+    			.000 .000 .000 .2 0 "
+   			/>
+    			<!-- contrast -->
+    			<feComponentTransfer>
+    				<feFuncA type="discrete" tableValues="0 1.4"/>
+    			</feComponentTransfer>
+    			<feFlood flood-color="#gradient_earlybird" flood-opacity=".3" />
+    			<feBlend mode="overlay" in="SourceGraphic" />
+    		</filter>
+    </defs>
+</svg>

@@ -1,0 +1,10 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">    
+	<defs>       
+		<filter id="f" >
+  			<feColorMatrix type="luminanceToAlpha" />
+		<feDiffuseLighting diffuseConstant="1" surfaceScale="10" result="diffuse3">
+		<feDistantLight elevation="28" azimuth="90" /></feDiffuseLighting>
+		<feComposite operator="in" in2="inputTo_3" />
+		<filter />
+	</defs>
+</svg>

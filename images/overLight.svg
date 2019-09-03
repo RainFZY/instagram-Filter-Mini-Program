@@ -1,0 +1,16 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">  
+    <defs>        
+     	<filter id="overLight">
+    		<feColorMatrix type="hueRotate" values="0" result="fbSourceGraphic" />
+    		<feColorMatrix in="fbSourceGraphic" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " result="result91" />
+    		<feBlend in2="result91" mode="darken" in="fbSourceGraphic" result="result92" />
+    		<feBlend in2="result92" mode="screen" result="result93" />
+    		<feComposite in2="SourceGraphic" operator="in" />
+ 	</filter>
+
+
+
+
+
+    </defs>
+</svg>

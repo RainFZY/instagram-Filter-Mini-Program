@@ -1,0 +1,12 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">  
+    <defs>
+         	<filter id="brannan">
+    		<!-- contrast -->
+    		<feComponentTransfer>
+    			<feFuncA type="discrete" tableValues="0 1.4"/>
+    		</feComponentTransfer>
+    		<feFlood flood-color="rgb(161,44,199)" flood-opacity=".31" />
+    		<feBlend mode="lighten" in="SourceGraphic" />
+    	</filter> 
+    </defs>
+</svg>

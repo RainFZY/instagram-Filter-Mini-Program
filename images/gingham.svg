@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+         	
+    	<linearGradient id="gradient_gingham">
+    		<stop offset="100%" stop-color="rgb(66, 10, 14)" stop-opacity="20%" />
+    		<stop offset="0%" stop-color="black" stop-opacity="0%" />
+    	</linearGradient>
+    	<filter id="gingham">
+    		<!-- brightness -->
+    		<feComponentTransfer>
+    			<feFuncA type="linear" slope="1.05"/>
+    		</feComponentTransfer>
+    		<!-- hue rotate -->
+    		<feColorMatrix in="SourceGraphic" type="hueRotate" values="350"/>
+    		
+    		
+    		<feFlood flood-color="#e6e6fa" flood-opacity=".3" />
+    		<feBlend mode="soft-light" in="SourceGraphic" />
+    		
+    	</filter>
+    </defs>
+</svg>

@@ -1,0 +1,19 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">  
+    <defs>        
+        <filter id="debris">
+    	<feTurbulence baseFrequency="0.14299516908212559" numOctaves="1" type="fractalNoise" />
+    	<feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -3.5 " result="result5" />
+    	<feComposite in2="result5" operator="in" in="SourceGraphic" result="result6" />
+    	<feMorphology result="result3" radius="5" operator="dilate" in="result6" />
+    	<feDisplacementMap in2="result3" result="result4" scale="0" yChannelSelector="A" xChannelSelector="R" in="result3" />
+    	<feComposite in2="result4" operator="arithmetic" result="result2" k1="1" k3="1" />
+    	<feBlend in2="result2" mode="darken" in="result2" />
+    	<feConvolveMatrix order="3 3" targetX="1" targetY="1" divisor="2" edgeMode="duplicate" 
+      		kernelMatrix="2 0 0 0 1 0 0 0 -1" />
+        </filter>
+
+
+
+
+    </defs>
+</svg>

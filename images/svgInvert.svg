@@ -1,0 +1,14 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">  
+    <defs>        
+     	<filter id="svgInvert">
+    		<feColorMatrix  values="-1 0 0 0 1 
+                           	 0 -1 0 0 1 
+                           	0 0 -1 0 1 
+                           	 0 0  0 1 0 " />
+	</filter>
+
+
+
+
+    </defs>
+</svg>

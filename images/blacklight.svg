@@ -1,0 +1,11 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">  
+    <defs>        
+         <filter id="blackLight">
+    	<feColorMatrix type="luminanceToAlpha" result="result2" />
+    	<feComposite in2="SourceGraphic" operator="arithmetic" in="result2" k3="2" result="result4" />
+    	<feBlend in2="result2" in="result4" mode="multiply" result="result3" />
+    	<feComposite in2="SourceGraphic" operator="in" in="result3" />
+         </filter>
+
+    </defs>
+</svg>

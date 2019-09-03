@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+         	
+    	<radialGradient id="gradient_toaster">
+    <stop offset="100%" stop-color="#804e0f" stop-opacity="100%" />
+    <stop offset="0%" stop-color="#3b003b" stop-opacity="100%" />
+    </radialGradient>
+    <filter id="toaster">
+    <!-- contrast -->
+    <feComponentTransfer>
+    <feFuncA type="discrete" tableValues="0 1.5"/>
+    </feComponentTransfer>
+    <!-- brightness -->
+    <feComponentTransfer>
+    <feFuncA type="linear" slope=".9"/>
+    </feComponentTransfer>
+    <!-- blend mode -->
+    <feFlood flood-color="#gradient_toaster" flood-opacity=".3" />
+    <feBlend mode="screen" in="SourceGraphic" />
+    </filter>
+    </defs>
+</svg>

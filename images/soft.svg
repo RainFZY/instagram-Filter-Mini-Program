@@ -1,0 +1,17 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">  
+    <defs>        
+        <filter id="soft">
+    	<feColorMatrix type="saturate" values="1" result="result91" />
+    	<feComposite in2="result91" result="result15" operator="arithmetic" k2="0.4" k1="0.3" k3="0.3" />
+    	<feGaussianBlur in="result15" result="result8" stdDeviation="5" />
+    	<feComposite in2="result8" operator="in" result="result13" />
+    	<feComposite in2="result13" k3="0.3" k1="0.3" k2="0.4" operator="arithmetic" in="result15" result="result6" />
+    	<feFlood flood-color="rgb(128,172,0)" flood-opacity="1" in="result6" result="result10" />
+    	<feBlend in2="result10" result="result12" in="result6" mode="darken" />
+    	<feBlend in2="result6" result="result14" mode="screen" />
+    	<feComposite in2="SourceGraphic" in="result14" operator="in" result="result2" />
+        </filter>
+
+
+    </defs>
+</svg>

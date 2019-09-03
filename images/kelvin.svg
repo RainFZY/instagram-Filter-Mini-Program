@@ -1,0 +1,11 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">  
+    <defs>
+         	<filter id="kelvin">
+    		<feFlood flood-color="#b77d21" flood-opacity=".3" />
+    		<feBlend mode="overlay" in="SourceGraphic" />
+    		<feBlend mode="color-dodge" in="SourceGraphic" />
+    	</filter>
+    	<!-- screen on filtered image -->
+    	<rect id="" x="0" y="0" width="100%" height="100%" fill-opacity=".3" mix-blend-mode="overlay" fill="#b77d21"/> 
+    </defs>
+</svg>

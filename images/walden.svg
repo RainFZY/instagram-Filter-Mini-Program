@@ -1,0 +1,27 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+         	
+    	<filter id="walden">
+    <!-- brightness -->
+    <feComponentTransfer>
+    <feFuncA type="linear" slope="1.1"/>
+    </feComponentTransfer>
+    <!-- hue rotate -->
+    <feColorMatrix in="SourceGraphic" type="hueRotate" values="350"/>
+    <!-- saturate -->
+    <feColorMatrix in="SourceGraphic" type="saturate" values="1.6"/>
+    <!-- sepia with opacity 30% -->
+    <feColorMatrix 
+    type="matrix" 
+    values="
+    .343 .669 .119 0 0 
+    .249 .626 .130 0 0
+    .172 .334 .111 0 0
+    .000 .000 .000 .3 0 "
+    />
+    <!-- blend mode -->
+    <feFlood flood-color="#04c" flood-opacity=".3" />
+    <feBlend mode="screen" in="SourceGraphic" />
+    </filter>
+    </defs>
+</svg>
