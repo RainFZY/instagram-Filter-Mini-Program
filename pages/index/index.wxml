@@ -1,0 +1,284 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <canvas canvas-id="canvas" class="{{isOpacity == true?'topScroll':''}}"style="height:{{canvasHeight}}rpx;">
+      <image class="{{imageClass}}"  src="{{avatarUrl2}}" bindtap="bindViewTap"  
+      mode="widthFix"style="filter:grayscale({{greyScale}}%) sepia({{sepiaNum}}%) url({{svgurl}})blur({{blur}}px) brightness({{brightness}}%) contrast({{contrast}}%) saturate({{saturate}}%) opacity({{opacity}}%);"data-src="{{avatarUrl2}}">
+      </image>
+    </canvas>
+    
+      
+    
+
+    <text class="text1"style="margin-top:18px">点击上方区域导入图片</text>
+    
+    <button class="button"role="button"bindtap="origin"
+      style="margin-top:20px "data-src="{{avatarUrl2}}">显示原图
+    </button>
+    
+
+    <!-- <text class="text1"style="margin-top:20px">滑动下方区域选择滤镜</text> -->
+    <!-- 基础滤镜 -->
+    <swiper
+      class = "wiper1"
+      indicator-dots="{{true}}"
+      indicator-color="rgba(0, 0, 1, .3)"
+      indicator-active-color="red"
+      duration="100"
+      
+    >
+  
+     <swiper-item>
+      <button class="button"role="button"style="margin-top:20px ">基础滤镜 →
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="filter1"
+      style="margin-top:20px ">高斯模糊
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="filter2"
+      style="margin-top:20px ">黑白
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="filter3"
+      style="margin-top:20px ">色相旋转90°
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="filter4"
+      style="margin-top:20px ">色相反转
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="filter5"
+      style="margin-top:20px ">高亮
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="filter6"
+      style="margin-top:20px ">高对比度
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="filter7"
+      style="margin-top:20px ">高饱和度
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="filter8"
+      style="margin-top:20px ">半透明
+      </button>
+     </swiper-item>
+     
+      
+     
+  
+    </swiper>
+
+    <!-- 高级滤镜 -->
+    <swiper
+      class = "wiper2"
+      indicator-dots="{{true}}"
+      indicator-color="rgba(0, 0, 1, .3)"
+      indicator-active-color="red"
+      duration="100"
+      
+    >
+  
+     <swiper-item>
+      <button class="button"role="button"style="margin-top:1px ">高级滤镜 →
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="hfilter0"
+      style="margin-top:8px ">老照片
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="hfilter1"
+      style="margin-top:8px ">秋天
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="hfilter2"
+      style="margin-top:8px ">黑光
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="hfilter3"
+      style="margin-top:8px ">碎片
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="hfilter4"
+      style="margin-top:8px ">漫射光
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="hfilter5"
+      style="margin-top:8px ">粗糙纸
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="hfilter6"
+      style="margin-top:8px ">晶体
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="hfilter7"
+      style="margin-top:8px ">柔和
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="hfilter8"
+      style="margin-top:8px ">软焦点
+      </button>
+     </swiper-item>
+     
+      
+     
+  
+    </swiper>
+
+    <!-- instagram滤镜1 -->
+    <swiper
+      class = "wiper2"
+      indicator-dots="{{true}}"
+      indicator-color="rgba(0, 0, 1, .3)"
+      indicator-active-color="red"
+      duration="100"
+      
+    >
+  
+     <swiper-item>
+      <button class="button"role="button"style="margin-top:1px ">intagram滤镜1 →
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter0"
+      style="margin-top:8px ">1977
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter1"
+      style="margin-top:8px ">ADEN
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter2"
+      style="margin-top:8px ">BROOKLYN
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter3"
+      style="margin-top:8px ">KELVIN
+      </button>
+     </swiper-item>
+     
+     
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter6"
+      style="margin-top:8px ">GINGHAM
+      </button>
+     </swiper-item>
+     
+     
+     
+    </swiper>
+
+    <!-- instagram滤镜2 -->
+    <swiper
+      class = "wiper2"
+      indicator-dots="{{true}}"
+      indicator-color="rgba(0, 0, 1, .3)"
+      indicator-active-color="red"
+      duration="100"
+      
+    >
+  
+     <swiper-item>
+      <button class="button"role="button"style="margin-top:1px ">intagram滤镜2 →
+      </button>
+     </swiper-item>
+     
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter9"
+      style="margin-top:8px ">LOFI
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter10"
+      style="margin-top:8px ">WALDEN
+      </button>
+     </swiper-item>
+     <!--<swiper-item>
+      <button class="button"role="button"bindtap="ifilter11"
+      style="margin-top:8px ">REYES
+      </button>
+     </swiper-item>  -->
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter12"
+      style="margin-top:8px ">XPRO2
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter13"
+      style="margin-top:8px ">TOASTER
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter14"
+      style="margin-top:8px ">MAVEN
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter15"
+      style="margin-top:8px ">MOON
+      </button>
+     </swiper-item>
+     <swiper-item>
+      <button class="button"role="button"bindtap="ifilter16"
+      style="margin-top:8px ">PERPETUA
+      </button>
+     </swiper-item>
+     
+     
+    </swiper>
+
+    
+
+    <button class="button"role="button"bindtap="previewImage"
+      style="margin-top:5px"data-src="{{avatarUrl2}}">全屏预览
+    </button>
+    
+   <!--  
+    <button class="button"role="button"bindtap="canvas"
+      style="margin-top:20px"data-src="{{avatarUrl2}}">canvas
+    </button>
+   -->
+
+    <button class="button"role="button"bindtap="saveImage"
+      style="margin-top:20px"data-src="{{avatarUrl}}">保存到本地相册
+    </button>
+    <button class="button"role="button"bindtap="getImageInfo"
+      style="margin-top:20px"data-src="{{avatarUrl2}}">查看图片信息
+    </button>
+    
+    <text class="text2"wx:if="{{load}}"style="margin-top:10px">图片的大小：{{imgwidth}}px*{{imgheight}}px
+    图片格式：{{imgtype}}
+    </text>
+
+    
+
+    
+
+  
+  
+  </view>
+</view>
+
+
+
