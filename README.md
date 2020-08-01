@@ -2,7 +2,7 @@
 
 ## 效果图：
 
-<img src="https://s1.ax1x.com/2020/08/01/a8IyJ1.jpg" alt="a8IyJ1.jpg" style="zoom:25%;" />
+[<img src="https://s1.ax1x.com/2020/08/01/a8b4PJ.jpg" alt="a8b4PJ.jpg" style="zoom: 50%;" />](https://imgchr.com/i/a8b4PJ)
 
 
 -----------------------------------------------------------------------------------------------------------------------------------
