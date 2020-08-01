@@ -2,12 +2,13 @@
 
 效果图：
 <p align="center">
-	<img src="https://github.com/RainFZY/instagram-Filter-Mini-Program/blob/master/images/preview%20image.jpg" alt="Sample"  width="540" height="1827">
+	<img src="https://s1.ax1x.com/2020/08/01/a8IyJ1.jpg" alt="Sample"  width="180" height="609">
 	<p align="center">
 		<em>图片示例1</em>
 	</p>
 </p>
------------------------------------------------------------------------------------------------------------------------------------   
+
+-----------------------------------------------------------------------------------------------------------------------------------
 
 # 说明：  
 1.图片和svg滤镜文件在images文件夹中  
