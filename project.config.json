@@ -5,16 +5,28 @@
 	},
 	"setting": {
 		"urlCheck": false,
+		"scopeDataCheck": false,
+		"coverView": true,
 		"es6": true,
 		"postcss": true,
+		"compileHotReLoad": false,
+		"preloadBackgroundData": false,
 		"minified": true,
+		"autoAudits": false,
 		"newFeature": true,
-		"autoAudits": false
+		"uglifyFileName": false,
+		"uploadWithSourceMap": true,
+		"useIsolateContext": true,
+		"nodeModules": false,
+		"enhance": false,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"showShadowRootInWxmlPanel": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.4",
 	"appid": "wx80e9470b9261ebb0",
-	"projectname": "%E6%88%91%E5%B0%B1%E8%B9%AD%E8%B9%AD",
+	"projectname": "instagram-Filter-Mini-Program",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
