@@ -2,7 +2,7 @@
 
 ## 效果图：
 
-##  [<img src="https://s1.ax1x.com/2020/08/01/a8vxJS.md.jpg" alt="a8vxJS.md.jpg" style="zoom: 25%;" />](https://imgchr.com/i/a8vxJS)     <img src="https://s1.ax1x.com/2020/08/01/a8j1XR.md.jpg" alt="a8j1XR.md.jpg" style="zoom:25%;" />
+##  [<img src="https://s1.ax1x.com/2020/08/01/a8vxJS.md.jpg" alt="a8vxJS.md.jpg" style="zoom: 10%;" />](https://imgchr.com/i/a8vxJS)     <img src="https://s1.ax1x.com/2020/08/01/a8j1XR.md.jpg" alt="a8j1XR.md.jpg" style="zoom:10%;" />
 
 
 
